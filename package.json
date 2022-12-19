@@ -1,0 +1,21 @@
+{
+  "name": "json2svg",
+  "version": "1.0.0",
+  "description": "A converter of graphic instructions in JSON format into Scalable Vector Graphic [(SVG)](https://developer.mozilla.org/en-US/docs/Web/SVG) format.",
+  "main": "json2svg.js",
+  "scripts": {
+    "start": "node --experimental-vm-modules json2svg.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TracyGJG/json2svg.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TracyGJG/json2svg/issues"
+  },
+  "homepage": "https://github.com/TracyGJG/json2svg#readme"
+}
