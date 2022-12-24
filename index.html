@@ -51,120 +51,34 @@
     <h2></h2>
     <main>
         <textarea id="txaInput" rows="24" placeholder="Enter JSON here" spellcheck="false">
-{
-    "layout": {
-        "alignment": "start|end|midway",
-        "spacing": 5,
-        "width": 120,
-        "height": 120
-    },
-    "diagrams": [
-        { "shape": "circle", "cx": 50, "cy": 50, "r": 40, "fc":"dr"},
-        { "shape": "ellipse", "cx": 50, "cy": 150, "rx": 30, "ry": 50, "fc":"di", "ra": 30},
-
-        { "shape": "rectangle", "x": 120, "y": 20, "w": 100, "h": 60, "fc":"ly"},
-        { "shape": "rectangle", "x": 120, "y": 80, "w": 100, "h": 60, "fc":"dg", "ra": 30},
-        { "shape": "rectangle", "x": 120, "y": 140, "w": 100, "h": 60, "fc":"do", "ra": 30, "tx": 150, "ty": 230},
-        
-        { "shape": "regular", "cx": 50, "cy": 300, "r": 40, "fc":"gf"},
-        { "shape": "regular", "cx": 100, "cy": 300, "r": 40, "s": 4, "fc":"ge"},
-        { "shape": "regular", "cx": 150, "cy": 300, "r": 40, "s": 5, "fc":"gc"},
-        { "shape": "regular", "cx": 200, "cy": 300, "r": 40, "s": 6, "fc":"ga"},
-        { "shape": "regular", "cx": 250, "cy": 300, "r": 40, "s": 7, "fc":"g8"},
-        { "shape": "regular", "cx": 300, "cy": 300, "r": 40, "s": 8, "fc":"g6"},
-        { "shape": "regular", "cx": 350, "cy": 300, "r": 40, "s": 9, "fc":"g4"},
-        { "shape": "regular", "cx": 400, "cy": 300, "r": 40, "s": 10, "fc":"g2"},
-        { "shape": "regular", "cx": 450, "cy": 300, "r": 40, "s": 11, "fc":"g0"},
-
-        { "shape": "circle", "cx": 115, "cy": 300, "r": 15, "fc":"gd"},
-        { "shape": "circle", "cx": 165, "cy": 300, "r": 15, "fc":"gb"},
-        { "shape": "circle", "cx": 215, "cy": 300, "r": 15, "fc":"g9"},
-        { "shape": "circle", "cx": 265, "cy": 300, "r": 15, "fc":"g7"},
-        { "shape": "circle", "cx": 315, "cy": 300, "r": 15, "fc":"g5"},
-        { "shape": "circle", "cx": 365, "cy": 300, "r": 15, "fc":"g3"},
-        { "shape": "circle", "cx": 415, "cy": 300, "r": 15, "fc":"g1"},
-        
-        { "shape": "regular", "cx": 50, "cy": 400, "r": 40, "ra": 60, "sc":"gf"},
-        { "shape": "regular", "cx": 100, "cy": 400, "r": 40, "s": 4, "ra": 45, "fc":"dr"},
-        { "shape": "regular", "cx": 150, "cy": 400, "r": 40, "s": 5, "ra": 36, "fc":"do"},
-        { "shape": "regular", "cx": 200, "cy": 400, "r": 40, "s": 6, "ra": 30, "fc":"dy"},
-        { "shape": "regular", "cx": 250, "cy": 400, "r": 40, "s": 7, "ra": 25.7, "fc":"dg"},
-        { "shape": "regular", "cx": 300, "cy": 400, "r": 40, "s": 8, "ra": 22.5, "fc":"dt"},
-        { "shape": "regular", "cx": 350, "cy": 400, "r": 40, "s": 9, "ra": 20, "fc":"db"},
-        { "shape": "regular", "cx": 400, "cy": 400, "r": 40, "s": 10, "ra": 18, "fc":"di"},
-        { "shape": "regular", "cx": 450, "cy": 400, "r": 40, "s": 11, "ra": 16.4, "fc":"dv"},
-
-        { "shape": "circle", "cx": 65, "cy": 400, "r": 15, "fc":"lr"},
-        { "shape": "circle", "cx": 115, "cy": 400, "r": 15, "fc":"lo"},
-        { "shape": "circle", "cx": 165, "cy": 400, "r": 15, "fc":"ly"},
-        { "shape": "circle", "cx": 215, "cy": 400, "r": 15, "fc":"lg"},
-        { "shape": "circle", "cx": 265, "cy": 400, "r": 15, "fc":"lt"},
-        { "shape": "circle", "cx": 315, "cy": 400, "r": 15, "fc":"lb"},
-        { "shape": "circle", "cx": 365, "cy": 400, "r": 15, "fc":"li"},
-        { "shape": "circle", "cx": 415, "cy": 400, "r": 15, "fc":"lv"},
-
-        { "shape": "rectangle", "x": 280, "y": 20, "w": 130, "h": 20, "fc":"g0"},
-        { "shape": "rectangle", "x": 280, "y": 40, "w": 130, "h": 20, "rx": "10", "fc":"g8"},
-        { "shape": "rectangle", "x": 280, "y": 60, "w": 130, "h": 20, "fc":"gf"},
-
-        { "shape": "text", "x": 285, "y": 35, "fc":"gf", "text": "Hello, World!", "ta": "l" },
-        { "shape": "text", "x": 345, "y": 55, "text": "Hello, World!" },
-        { "shape": "text", "x": 405, "y": 75, "fc":"g4", "text": "Hello, World!", "ta": "r" },
-        
-        { "shape": "polygon", "p": [
-            {"x": 320, "y": 180},
-            {"x": 300, "y": 200},
-            {"x": 320, "y": 120},
-            {"x": 340, "y": 200}
-        ], "ra": 20, "fc":"gf", "sc":"g0"},
-        { "shape": "polyline", "p": [
-            {"x": 380, "y": 180},
-            {"x": 360, "y": 200},
-            {"x": 380, "y": 120},
-            {"x": 400, "y": 200}
-        ], "ra": 20, "sc":"dy"}
-    ]
-}
         </textarea>
         <div id="divSvgContainer">
         </div>
     </main>
-    <!-- <footer>
-        The source code of JSON-2-SVG can be found on <a
-            href="https://github.com/TracyGJG/json2svg#readme">GitHub</a>
-        <br>
-        <a href="https://app.netlify.com/sites/json2svg/deploys">
-            <img src="https://api.netlify.com/api/v1/badges/0a4fd344-9f2e-49d7-8685-a54311221f43/deploy-status">
-        </a>
-    </footer> -->
+    <footer>
+        <a href="https://app.netlify.com/sites/json2svg/deploys"><img
+                src="https://api.netlify.com/api/v1/badges/b4f04530-6ff5-4e50-887a-6c6b0162255b/deploy-status"></a>
+        The source code of JSON-2-SVG can be found on <a href="https://github.com/TracyGJG/json2svg#readme">GitHub</a>
+    </footer>
 
     <script type="module">
         import json2svg from './json2svg-lib.js';
+        import jsonData from './example2.json' assert {type: 'json'};
 
-        // "styles": {},
-        // "overall": {
-        //     "width": 
-        // },
-        // "layout": {
-        //     "orientation": "row",
-        //     "alignment": "middle",
-        //     "spacing": 5,
-        //     "width": 120,
-        //     "height": 120,
-        //     "x": -10,
-        //     "y": -10
-        // },
+        const input = document.querySelector('#txaInput');
+        input.value = JSON.stringify(jsonData, null, 2);
+        input.addEventListener('keyup', updateSvg);
 
-        const updateSvg = () => {
+        updateSvg();
+
+
+        function updateSvg() {
             const txaInput = document.querySelector('#txaInput');
             const divSvgContainer = document.querySelector('#divSvgContainer');
             const jsonObj = JSON.parse(txaInput.value.trim());
             const result = json2svg(jsonObj);
             divSvgContainer.innerHTML = result;
-        };
-        updateSvg();
-
-        document.querySelector('#txaInput').addEventListener('keyup', updateSvg);
+        }
     </script>
 </body>
 

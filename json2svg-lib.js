@@ -1,10 +1,5 @@
 export default function json2svg(json) {
-	const diagrams = json.diagrams.map(processContent).join('');
-	const svgFromJson = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600">
-	${diagrams}
-</svg>`;
-
-	return svgFromJson;
+	return processLayout(json, 'xmlns="http://www.w3.org/2000/svg"');
 }
 
 const colours = {
@@ -51,7 +46,19 @@ const colours = {
 	x: 'transparent',
 };
 
-function processContent(diagram = {}) {
+const joinElements = (elementArray = [], mapFunctor) =>
+	elementArray.map(element => mapFunctor(element)).join('');
+
+function processLayout(layout = {}, ns = '') {
+	const { x = 0, y = 0, width = 0, height = 0 } = layout;
+
+	return `<svg ${ns} x="${x}" y="${y}" height="${height}" width="${width}">
+	${joinElements(layout.layouts, processLayout)}
+	${joinElements(layout.diagrams, processDiagram)}
+</svg>`;
+}
+
+function processDiagram(diagram = {}) {
 	const shapes = {
 		circle: _ => {
 			const { cx = 0, cy = 0, r = 0, fc = 'x' } = _;

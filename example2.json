@@ -1,0 +1,381 @@
+{
+    "width": 500,
+    "height": 500,
+    "layouts": [
+        {
+            "width": 600,
+            "height": 240,
+            "diagrams": [
+                {
+                    "shape": "circle",
+                    "cx": 50,
+                    "cy": 50,
+                    "r": 40,
+                    "fc": "dr"
+                },
+                {
+                    "shape": "ellipse",
+                    "cx": 50,
+                    "cy": 150,
+                    "rx": 30,
+                    "ry": 50,
+                    "fc": "di",
+                    "ra": 30
+                },
+                {
+                    "shape": "rectangle",
+                    "x": 120,
+                    "y": 20,
+                    "w": 100,
+                    "h": 60,
+                    "fc": "ly"
+                },
+                {
+                    "shape": "rectangle",
+                    "x": 120,
+                    "y": 80,
+                    "w": 100,
+                    "h": 60,
+                    "fc": "dg",
+                    "ra": 30
+                },
+                {
+                    "shape": "rectangle",
+                    "x": 120,
+                    "y": 140,
+                    "w": 100,
+                    "h": 60,
+                    "fc": "do",
+                    "ra": 30,
+                    "tx": 150,
+                    "ty": 230
+                },
+                {
+                    "shape": "text",
+                    "x": 285,
+                    "y": 35,
+                    "fc": "gf",
+                    "text": "Hello, World!",
+                    "ta": "l"
+                },
+                {
+                    "shape": "text",
+                    "x": 345,
+                    "y": 55,
+                    "text": "Hello, World!"
+                },
+                {
+                    "shape": "text",
+                    "x": 405,
+                    "y": 75,
+                    "fc": "g4",
+                    "text": "Hello, World!",
+                    "ta": "r"
+                },
+                {
+                    "shape": "polygon",
+                    "p": [
+                        {
+                            "x": 320,
+                            "y": 180
+                        },
+                        {
+                            "x": 300,
+                            "y": 200
+                        },
+                        {
+                            "x": 320,
+                            "y": 120
+                        },
+                        {
+                            "x": 340,
+                            "y": 200
+                        }
+                    ],
+                    "ra": 20,
+                    "fc": "gf",
+                    "sc": "g0"
+                },
+                {
+                    "shape": "polyline",
+                    "p": [
+                        {
+                            "x": 380,
+                            "y": 180
+                        },
+                        {
+                            "x": 360,
+                            "y": 200
+                        },
+                        {
+                            "x": 380,
+                            "y": 120
+                        },
+                        {
+                            "x": 400,
+                            "y": 200
+                        }
+                    ],
+                    "ra": 20,
+                    "sc": "dy"
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 250,
+            "width": 600,
+            "height": 100,
+            "diagrams": [
+                {
+                    "shape": "regular",
+                    "cx": 50,
+                    "cy": 50,
+                    "r": 40,
+                    "fc": "gf"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 100,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 4,
+                    "fc": "ge"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 150,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 5,
+                    "fc": "gc"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 200,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 6,
+                    "fc": "ga"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 250,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 7,
+                    "fc": "g8"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 300,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 8,
+                    "fc": "g6"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 350,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 9,
+                    "fc": "g4"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 400,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 10,
+                    "fc": "g2"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 450,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 11,
+                    "fc": "g0"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 115,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "gd"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 165,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "gb"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 215,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g9"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 265,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g7"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 315,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g5"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 365,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g3"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 415,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g1"
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 350,
+            "width": 600,
+            "height": 100,
+            "diagrams": [
+                {
+                    "shape": "regular",
+                    "cx": 50,
+                    "cy": 50,
+                    "r": 40,
+                    "fc": "gf"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 100,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 4,
+                    "fc": "ge"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 150,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 5,
+                    "fc": "gc"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 200,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 6,
+                    "fc": "ga"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 250,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 7,
+                    "fc": "g8"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 300,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 8,
+                    "fc": "g6"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 350,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 9,
+                    "fc": "g4"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 400,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 10,
+                    "fc": "g2"
+                },
+                {
+                    "shape": "regular",
+                    "cx": 450,
+                    "cy": 50,
+                    "r": 40,
+                    "s": 11,
+                    "fc": "g0"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 115,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "gd"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 165,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "gb"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 215,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g9"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 265,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g7"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 315,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g5"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 365,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g3"
+                },
+                {
+                    "shape": "circle",
+                    "cx": 415,
+                    "cy": 50,
+                    "r": 15,
+                    "fc": "g1"
+                }
+            ]
+        }
+    ]
+}
