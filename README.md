@@ -55,3 +55,7 @@ Like the original project, json2svg will support:
   - Float
   - String
   - List (array)
+
+Implemented features are ~~crossed-out~~.
+
+A live demonstration can be found <a href="https://json2svg.netlify.app/">HERE</a>.
