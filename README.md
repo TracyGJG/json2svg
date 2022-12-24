@@ -31,7 +31,7 @@ Like the original project, json2svg will support:
   - ~~line/polyline~~
 
 * Transformation such as
-  - translate
+  - ~~translate~~
   - scale
   - ~~rotate~~
 

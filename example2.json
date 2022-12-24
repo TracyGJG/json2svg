@@ -5,119 +5,203 @@
         {
             "width": 600,
             "height": 240,
-            "diagrams": [
+            "layouts": [
                 {
-                    "shape": "circle",
-                    "cx": 50,
-                    "cy": 50,
-                    "r": 40,
-                    "fc": "dr"
-                },
-                {
-                    "shape": "ellipse",
-                    "cx": 50,
-                    "cy": 150,
-                    "rx": 30,
-                    "ry": 50,
-                    "fc": "di",
-                    "ra": 30
-                },
-                {
-                    "shape": "rectangle",
-                    "x": 120,
-                    "y": 20,
-                    "w": 100,
-                    "h": 60,
-                    "fc": "ly"
-                },
-                {
-                    "shape": "rectangle",
-                    "x": 120,
-                    "y": 80,
-                    "w": 100,
-                    "h": 60,
-                    "fc": "dg",
-                    "ra": 30
-                },
-                {
-                    "shape": "rectangle",
-                    "x": 120,
-                    "y": 140,
-                    "w": 100,
-                    "h": 60,
-                    "fc": "do",
-                    "ra": 30,
-                    "tx": 150,
-                    "ty": 230
-                },
-                {
-                    "shape": "text",
-                    "x": 285,
-                    "y": 35,
-                    "fc": "gf",
-                    "text": "Hello, World!",
-                    "ta": "l"
-                },
-                {
-                    "shape": "text",
-                    "x": 345,
-                    "y": 55,
-                    "text": "Hello, World!"
-                },
-                {
-                    "shape": "text",
-                    "x": 405,
-                    "y": 75,
-                    "fc": "g4",
-                    "text": "Hello, World!",
-                    "ta": "r"
-                },
-                {
-                    "shape": "polygon",
-                    "p": [
+                    "x": 0,
+                    "y": 0,
+                    "width": 120,
+                    "height": 240,
+                    "diagrams": [
                         {
-                            "x": 320,
-                            "y": 180
+                            "shape": "circle",
+                            "cx": 50,
+                            "cy": 50,
+                            "r": 40,
+                            "fc": "dr"
                         },
                         {
-                            "x": 300,
-                            "y": 200
-                        },
-                        {
-                            "x": 320,
-                            "y": 120
-                        },
-                        {
-                            "x": 340,
-                            "y": 200
+                            "shape": "ellipse",
+                            "cx": 50,
+                            "cy": 150,
+                            "rx": 30,
+                            "ry": 50,
+                            "fc": "di",
+                            "ra": 30
                         }
-                    ],
-                    "ra": 20,
-                    "fc": "gf",
-                    "sc": "g0"
+                    ]
                 },
                 {
-                    "shape": "polyline",
-                    "p": [
+                    "x": 120,
+                    "y": 0,
+                    "width": 160,
+                    "height": 240,
+                    "diagrams": [
                         {
-                            "x": 380,
-                            "y": 180
+                            "shape": "rectangle",
+                            "x": 20,
+                            "y": 20,
+                            "w": 100,
+                            "h": 60,
+                            "fc": "ly"
                         },
                         {
-                            "x": 360,
-                            "y": 200
+                            "shape": "rectangle",
+                            "x": 20,
+                            "y": 80,
+                            "w": 100,
+                            "h": 60,
+                            "fc": "dg",
+                            "ra": 30
                         },
                         {
-                            "x": 380,
-                            "y": 120
-                        },
-                        {
-                            "x": 400,
-                            "y": 200
+                            "shape": "rectangle",
+                            "x": 20,
+                            "y": 140,
+                            "w": 100,
+                            "h": 60,
+                            "fc": "do",
+                            "ra": 30,
+                            "tx": 70,
+                            "ty": 170
                         }
-                    ],
-                    "ra": 20,
-                    "sc": "dy"
+                    ]
+                },
+                {
+                    "x": 280,
+                    "y": 0,
+                    "width": 160,
+                    "height": 240,
+                    "layouts": [
+                        {
+                            "x": 0,
+                            "y": 0,
+                            "width": 160,
+                            "height": 110,
+                            "diagrams": [
+                                {
+                                    "shape": "rectangle",
+                                    "x": 0,
+                                    "y": 20,
+                                    "w": 120,
+                                    "h": 20,
+                                    "fc": "g0"
+                                },
+                                {
+                                    "shape": "rectangle",
+                                    "x": 0,
+                                    "y": 40,
+                                    "w": 120,
+                                    "h": 20,
+                                    "fc": "g7",
+                                    "cr": 10
+                                },
+                                {
+                                    "shape": "rectangle",
+                                    "x": 0,
+                                    "y": 60,
+                                    "w": 120,
+                                    "h": 20,
+                                    "fc": "gf"
+                                },
+                                {
+                                    "shape": "rectangle",
+                                    "x": 0,
+                                    "y": 80,
+                                    "w": 120,
+                                    "h": 30,
+                                    "fc": "ly"
+                                },
+                                {
+                                    "shape": "text",
+                                    "x": 0,
+                                    "y": 35,
+                                    "fc": "gf",
+                                    "text": "Hello, World!",
+                                    "ta": "l"
+                                },
+                                {
+                                    "shape": "text",
+                                    "x": 60,
+                                    "y": 55,
+                                    "text": "Hello, World!"
+                                },
+                                {
+                                    "shape": "text",
+                                    "x": 120,
+                                    "y": 75,
+                                    "fc": "g4",
+                                    "text": "Hello, World!",
+                                    "ta": "r"
+                                },
+                                {
+                                    "shape": "text",
+                                    "x": 60,
+                                    "y": 100,
+                                    "fc": "db",
+                                    "text": "Hello, World!",
+                                    "ta": "c",
+                                    "r": -20
+                                }
+                            ]
+                        },
+                        {
+                            "x": 0,
+                            "y": 120,
+                            "width": 160,
+                            "height": 120,
+                            "diagrams": [
+                                {
+                                    "shape": "polygon",
+                                    "p": [
+                                        {
+                                            "x": 35,
+                                            "y": 80
+                                        },
+                                        {
+                                            "x": 15,
+                                            "y": 100
+                                        },
+                                        {
+                                            "x": 35,
+                                            "y": 20
+                                        },
+                                        {
+                                            "x": 55,
+                                            "y": 100
+                                        }
+                                    ],
+                                    "ra": 20,
+                                    "fc": "gf",
+                                    "sc": "lr"
+                                },
+                                {
+                                    "shape": "polyline",
+                                    "p": [
+                                        {
+                                            "x": 35,
+                                            "y": 80
+                                        },
+                                        {
+                                            "x": 15,
+                                            "y": 100
+                                        },
+                                        {
+                                            "x": 35,
+                                            "y": 20
+                                        },
+                                        {
+                                            "x": 55,
+                                            "y": 100
+                                        }
+                                    ],
+                                    "ra": 20,
+                                    "sc": "g0",
+                                    "ox": 60,
+                                    "oy": -20
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -197,53 +281,61 @@
                     "r": 40,
                     "s": 11,
                     "fc": "g0"
-                },
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 280,
+            "width": 600,
+            "height": 40,
+            "diagrams": [
                 {
                     "shape": "circle",
                     "cx": 115,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "gd"
                 },
                 {
                     "shape": "circle",
                     "cx": 165,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "gb"
                 },
                 {
                     "shape": "circle",
                     "cx": 215,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g9"
                 },
                 {
                     "shape": "circle",
                     "cx": 265,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g7"
                 },
                 {
                     "shape": "circle",
                     "cx": 315,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g5"
                 },
                 {
                     "shape": "circle",
                     "cx": 365,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g3"
                 },
                 {
                     "shape": "circle",
                     "cx": 415,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g1"
                 }
@@ -325,53 +417,61 @@
                     "r": 40,
                     "s": 11,
                     "fc": "g0"
-                },
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 380,
+            "width": 600,
+            "height": 40,
+            "diagrams": [
                 {
                     "shape": "circle",
                     "cx": 115,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "gd"
                 },
                 {
                     "shape": "circle",
                     "cx": 165,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "gb"
                 },
                 {
                     "shape": "circle",
                     "cx": 215,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g9"
                 },
                 {
                     "shape": "circle",
                     "cx": 265,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g7"
                 },
                 {
                     "shape": "circle",
                     "cx": 315,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g5"
                 },
                 {
                     "shape": "circle",
                     "cx": 365,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g3"
                 },
                 {
                     "shape": "circle",
                     "cx": 415,
-                    "cy": 50,
+                    "cy": 20,
                     "r": 15,
                     "fc": "g1"
                 }

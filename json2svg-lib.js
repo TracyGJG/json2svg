@@ -61,8 +61,8 @@ function processLayout(layout = {}, ns = '') {
 function processDiagram(diagram = {}) {
 	const shapes = {
 		circle: _ => {
-			const { cx = 0, cy = 0, r = 0, fc = 'x' } = _;
-			return `<circle cx=${cx} cy=${cy} r=${r} fill="${colours[fc]}" />`;
+			const { cx = 0, cy = 0, r = 0, fc = 'x', ox = 0, oy = 0 } = _;
+			return `<circle cx=${cx} cy=${cy} r=${r} fill="${colours[fc]}" transform="translate(${ox} ${oy})"  />`;
 		},
 		ellipse: _ => {
 			const {
@@ -74,10 +74,14 @@ function processDiagram(diagram = {}) {
 				ra = 0,
 				tx = 0,
 				ty = 0,
+				ox = 0,
+				oy = 0,
 			} = _;
 			return `<ellipse cx=${cx} cy=${cy} rx=${rx} ry=${ry} fill="${
 				colours[fc]
-			}" transform="rotate(${ra} ${tx || cx} ${ty || cy})" />`;
+			}" transform="rotate(${ra} ${tx || cx} ${
+				ty || cy
+			}) translate(${ox} ${oy})" />`;
 		},
 		rectangle: _ => {
 			const {
@@ -85,18 +89,20 @@ function processDiagram(diagram = {}) {
 				y = 0,
 				w = 0,
 				h = 0,
-				rx = 0,
+				cr = 0,
 				fc = 'x',
 				sc = 'x',
 				ra = 0,
 				tx = 0,
 				ty = 0,
+				ox = 0,
+				oy = 0,
 			} = _;
-			return `<rect x=${x} y=${y} width=${w} height=${h} rx="${rx}" fill="${
+			return `<rect x=${x} y=${y} width=${w} height=${h} rx="${cr}" fill="${
 				colours[fc]
 			}" stroke="${colours[sc]}" transform="rotate(${ra} ${tx || x + w / 2} ${
 				ty || y + h / 2
-			})" />`;
+			}) translate(${ox} ${oy})" />`;
 		},
 		regular: _ => {
 			const {
@@ -109,6 +115,8 @@ function processDiagram(diagram = {}) {
 				ra = 0,
 				tx = 0,
 				ty = 0,
+				ox = 0,
+				oy = 0,
 			} = _;
 			const RADIANS = Math.PI * 2;
 			const points = new Array(s)
@@ -120,31 +128,31 @@ function processDiagram(diagram = {}) {
 				.join(' ');
 			return `<polygon points="${points}" fill="${
 				colours[fc]
-			}" transform="rotate(${ra} ${tx || cx} ${ty || cy})" stroke="${
-				colours[sc]
-			}" />`;
+			}" transform="rotate(${ra} ${tx || cx} ${
+				ty || cy
+			}) translate(${ox} ${oy})" stroke="${colours[sc]}" />`;
 		},
 		polygon: _ => {
 			const centre = ps => {
 				const min = Math.min(...ps);
 				return (Math.max(...ps) - min) / 2 + min;
 			};
-			const { p = [], fc = 'x', sc = 'x', ra = 0 } = _;
+			const { p = [], fc = 'x', sc = 'x', ra = 0, ox = 0, oy = 0 } = _;
 			const tx = centre(p.map(({ x }) => x));
 			const ty = centre(p.map(({ y }) => y));
 			const points = p.map(({ x, y }) => `${x},${y}`).join(' ');
-			return `<polygon points="${points}" fill="${colours[fc]}" stroke="${colours[sc]}" transform="rotate(${ra} ${tx} ${ty})" />`;
+			return `<polygon points="${points}" fill="${colours[fc]}" stroke="${colours[sc]}" transform="rotate(${ra} ${tx} ${ty}) translate(${ox} ${oy})" />`;
 		},
 		polyline: _ => {
 			const centre = ps => {
 				const min = Math.min(...ps);
 				return (Math.max(...ps) - min) / 2 + min;
 			};
-			const { p = [], sc = 'x', ra = 0 } = _;
+			const { p = [], sc = 'x', ra = 0, ox = 0, oy = 0 } = _;
 			const tx = centre(p.map(({ x }) => x));
 			const ty = centre(p.map(({ y }) => y));
 			const points = p.map(({ x, y }) => `${x},${y}`).join(' ');
-			return `<polyline points="${points}" fill="none" stroke="${colours[sc]}" transform="rotate(${ra} ${tx} ${ty})" />`;
+			return `<polyline points="${points}" fill="none" stroke="${colours[sc]}" transform="rotate(${ra} ${tx} ${ty}) translate(${ox} ${oy})" />`;
 		},
 		text: _ => {
 			const { x = 0, y = 0, r = 0, fc = 'g0', text = '', ta = 'c' } = _;
@@ -153,7 +161,7 @@ function processDiagram(diagram = {}) {
 				c: 'middle',
 				r: 'end',
 			};
-			return `<text x=${x} y=${y} fill="${colours[fc]}" text-anchor="${textAnchor[ta]}" >${text}</text>`;
+			return `<text x=${x} y=${y} rotate=${r} fill="${colours[fc]}" text-anchor="${textAnchor[ta]}" >${text}</text>`;
 		},
 	};
 	return shapes[diagram.shape](diagram);
