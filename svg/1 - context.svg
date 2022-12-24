@@ -1,0 +1,81 @@
+<svg viewBox="-10 -10 620 480" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        polyline, rect {
+            fill: transparent;
+            stroke: #000000;
+            stroke-width: 1;
+        }
+        polygon {
+            fill: #dddddd;
+            stroke: #000000;
+        }
+        text {
+            fill: #0000cc;
+            text-anchor: middle;
+        }
+
+        .projectTitle {
+            stroke-width: 1;
+            font-weight: bold;
+        }
+        .container {
+            fill: #eeeeee;
+        }
+        .component {
+            fill: #eeeeee;
+            rx: 5;
+        }
+    </style>
+
+    <defs>
+        <marker
+            id="arrow"
+            viewBox="0 0 15 15"
+            refX="14"
+            refY="7"
+            markerWidth="11"
+            markerHeight="11"
+            orient="auto-start-reverse">
+            <path d="M 0 0 L 14 7 L 0 14 L 4 7 z" />
+        </marker>
+    </defs>
+
+<svg>
+    <rect x="0" y="0" width="400" height="100"></rect>
+    <polygon points="0,25 100,25 110,0 0,0" class="projectTitle"></polygon>
+    <text x="5" y="18" style="text-anchor: start">Project Name</text>
+
+    <polyline points="180,60 220,60" marker-start="url(#arrow)"></polyline>
+
+    <rect x="20" y="40" width="160" height="40" class="container"></rect>
+    <text x="100" y="65">aw-external-adaptors</text>
+</svg>
+
+    <rect x="220" y="40" width="160" height="40" class="container"></rect>
+    <text x="300" y="65">aw-webapp</text>
+
+    <rect x="0" y="120" width="400" height="220"></rect>
+    <polygon points="0,145 100,145 110,120 0,120" class="projectTitle"></polygon>
+    <text x="5" y="138" style="text-anchor: start">Adaptors</text>
+
+
+    <rect x="220" y="160" width="160" height="40" class="component"></rect>
+    <text x="300" y="185">adaptor one</text>
+    <polyline points="100,220 100,180 220,180" marker-start="url(#arrow)"></polyline>
+    <polyline points="380,180 400,180" marker-start="url(#arrow)"></polyline>
+
+    <rect x="20" y="220" width="160" height="40" class="component"></rect>
+    <text x="100" y="245">utilities</text>
+    <polyline points="180,240 220,240" marker-start="url(#arrow)"></polyline>
+
+    <rect x="220" y="220" width="160" height="40" class="component"></rect>
+    <text x="300" y="245">adaptor two</text>
+    <polyline points="380,240 400,240" marker-start="url(#arrow)"></polyline>
+
+    <rect x="220" y="280" width="160" height="40" class="component"></rect>
+    <text x="300" y="305">adaptor three</text>
+    <polyline points="100,260 100,300 220,300" marker-start="url(#arrow)"></polyline>
+    <polyline points="380,300 400,300" marker-start="url(#arrow)"></polyline>
+
+
+</svg>
