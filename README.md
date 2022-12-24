@@ -22,36 +22,36 @@ The json2svg project comprises of a ES Module (json2svg-lib) intended to be used
 Like the original project, json2svg will support:
 
 * The creation of
-- ~~circle/elipse~~
-- ~~rectangle/square~~
-- ~~regularPolygon~~
-- ~~polygon (irregular)~~
-- image
-- ~~text~~
-- ~~line/polyline~~
+  - ~~circle/elipse~~
+  - ~~rectangle/square~~
+  - ~~regularPolygon~~
+  - ~~polygon (irregular)~~
+  - image
+  - ~~text~~
+  - ~~line/polyline~~
 
 * Transformation such as
-- translate
-- scale
-- ~~rotate~~
+  - translate
+  - scale
+  - ~~rotate~~
 
 * Utilities such as
-- align
-- pad
+  - align
+  - pad
 
 * Layout (Combinators)
-- ~~stack~~
-- row
-- column
+  - ~~stack~~
+  - row
+  - column
 
 * Curated Style
-- 12 set colours including transparent
-- 4 line thicknesses
-- 4 line styles
-- ? Fonts
+  - 12 set colours including transparent
+  - 4 line thicknesses
+  - 4 line styles
+  - ? Fonts
 
 * Data tpes
-- Int
-- Float
-- String
-- List (array)
+  - Int
+  - Float
+  - String
+  - List (array)
