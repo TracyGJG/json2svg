@@ -1,5 +1,5 @@
 export default function json2svg(json) {
-	return processLayout(json, 'xmlns="http://www.w3.org/2000/svg"');
+	return processlayer(json, 'xmlns="http://www.w3.org/2000/svg"');
 }
 
 const colours = {
@@ -49,20 +49,20 @@ const colours = {
 const joinElements = (elementArray = [], mapFunctor) =>
 	elementArray.map(element => mapFunctor(element)).join('');
 
-function processLayout(layout = {}, ns = '') {
-	const { x = 0, y = 0, width = 0, height = 0 } = layout;
+function processlayer(layer = {}, ns = '') {
+	const { x = 0, y = 0, width = 0, height = 0 } = layer;
 
 	return `<svg ${ns} x="${x}" y="${y}" height="${height}" width="${width}">
-	${joinElements(layout.layouts, processLayout)}
-	${joinElements(layout.diagrams, processDiagram)}
+	${joinElements(layer.layer, processlayer)}
+	${joinElements(layer.graphic, processgraphic)}
 </svg>`;
 }
 
-function processDiagram(diagram = {}) {
-	const shapes = {
+function processgraphic(graphic = {}) {
+	const elements = {
 		circle: _ => {
-			const { cx = 0, cy = 0, r = 0, fc = 'x', ox = 0, oy = 0 } = _;
-			return `<circle cx=${cx} cy=${cy} r=${r} fill="${colours[fc]}" transform="translate(${ox} ${oy})"  />`;
+			const { cx = 0, cy = 0, r = 0, fc = 'x', sc = 'x', ox = 0, oy = 0 } = _;
+			return `<circle cx=${cx} cy=${cy} r=${r} fill="${colours[fc]}" stroke="${colours[sc]}" transform="translate(${ox} ${oy})"  />`;
 		},
 		ellipse: _ => {
 			const {
@@ -155,14 +155,39 @@ function processDiagram(diagram = {}) {
 			return `<polyline points="${points}" fill="none" stroke="${colours[sc]}" transform="rotate(${ra} ${tx} ${ty}) translate(${ox} ${oy})" />`;
 		},
 		text: _ => {
-			const { x = 0, y = 0, r = 0, fc = 'g0', text = '', ta = 'c' } = _;
+			const {
+				x = 0,
+				y = 0,
+				r = 0,
+				fc = 'g0',
+				text = '',
+				ta = 'c',
+				ra = 0,
+				tx = 0,
+				ty = 0,
+				ox = 0,
+				oy = 0,
+			} = _;
 			const textAnchor = {
 				l: 'start',
 				c: 'middle',
 				r: 'end',
 			};
-			return `<text x=${x} y=${y} rotate=${r} fill="${colours[fc]}" text-anchor="${textAnchor[ta]}" >${text}</text>`;
+			return `<text x=${x} y=${y} rotate=${r} fill="${colours[fc]}" text-anchor="${textAnchor[ta]}" transform="rotate(${ra} ${tx} ${ty}) translate(${ox} ${oy})" >${text}</text>`;
+		},
+		image: _ => {
+			const {
+				url = '',
+				height = 0,
+				width = 0,
+				ra = 0,
+				tx = 0,
+				ty = 0,
+				ox = 0,
+				oy = 0,
+			} = _;
+			return `<image href="${url}" height="${height}" width="${width}" transform="rotate(${ra} ${tx} ${ty}) translate(${ox} ${oy})" />`;
 		},
 	};
-	return shapes[diagram.shape](diagram);
+	return elements[graphic.element](graphic);
 }

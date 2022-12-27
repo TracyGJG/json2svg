@@ -26,7 +26,7 @@ Like the original project, json2svg will support:
   - ~~rectangle/square~~
   - ~~regularPolygon~~
   - ~~polygon (irregular)~~
-  - image
+  - ~~image~~
   - ~~text~~
   - ~~line/polyline~~
 
@@ -45,7 +45,7 @@ Like the original project, json2svg will support:
   - column
 
 * Curated Style
-  - 12 set colours including transparent
+  - 12 set colours including transparent (16 x 2 + 17)
   - 4 line thicknesses
   - 4 line styles
   - ? Fonts

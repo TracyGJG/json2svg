@@ -1,16 +1,16 @@
 {
     "width": 600,
     "height": 600,
-    "diagrams": [
+    "graphic": [
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 50,
             "cy": 50,
             "r": 40,
             "fc": "dr"
         },
         {
-            "shape": "ellipse",
+            "element": "ellipse",
             "cx": 50,
             "cy": 150,
             "rx": 30,
@@ -19,7 +19,7 @@
             "ra": 30
         },
         {
-            "shape": "rectangle",
+            "element": "rectangle",
             "x": 120,
             "y": 20,
             "w": 100,
@@ -27,7 +27,7 @@
             "fc": "ly"
         },
         {
-            "shape": "rectangle",
+            "element": "rectangle",
             "x": 120,
             "y": 80,
             "w": 100,
@@ -36,7 +36,7 @@
             "ra": 30
         },
         {
-            "shape": "rectangle",
+            "element": "rectangle",
             "x": 120,
             "y": 140,
             "w": 100,
@@ -47,14 +47,14 @@
             "ty": 230
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 50,
             "cy": 300,
             "r": 40,
             "fc": "gf"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 100,
             "cy": 300,
             "r": 40,
@@ -62,7 +62,7 @@
             "fc": "ge"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 150,
             "cy": 300,
             "r": 40,
@@ -70,7 +70,7 @@
             "fc": "gc"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 200,
             "cy": 300,
             "r": 40,
@@ -78,7 +78,7 @@
             "fc": "ga"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 250,
             "cy": 300,
             "r": 40,
@@ -86,7 +86,7 @@
             "fc": "g8"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 300,
             "cy": 300,
             "r": 40,
@@ -94,7 +94,7 @@
             "fc": "g6"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 350,
             "cy": 300,
             "r": 40,
@@ -102,7 +102,7 @@
             "fc": "g4"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 400,
             "cy": 300,
             "r": 40,
@@ -110,7 +110,7 @@
             "fc": "g2"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 450,
             "cy": 300,
             "r": 40,
@@ -118,56 +118,56 @@
             "fc": "g0"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 115,
             "cy": 300,
             "r": 15,
             "fc": "gd"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 165,
             "cy": 300,
             "r": 15,
             "fc": "gb"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 215,
             "cy": 300,
             "r": 15,
             "fc": "g9"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 265,
             "cy": 300,
             "r": 15,
             "fc": "g7"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 315,
             "cy": 300,
             "r": 15,
             "fc": "g5"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 365,
             "cy": 300,
             "r": 15,
             "fc": "g3"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 415,
             "cy": 300,
             "r": 15,
             "fc": "g1"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 50,
             "cy": 400,
             "r": 40,
@@ -175,7 +175,7 @@
             "sc": "gf"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 100,
             "cy": 400,
             "r": 40,
@@ -184,7 +184,7 @@
             "fc": "dr"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 150,
             "cy": 400,
             "r": 40,
@@ -193,7 +193,7 @@
             "fc": "do"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 200,
             "cy": 400,
             "r": 40,
@@ -202,7 +202,7 @@
             "fc": "dy"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 250,
             "cy": 400,
             "r": 40,
@@ -211,7 +211,7 @@
             "fc": "dg"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 300,
             "cy": 400,
             "r": 40,
@@ -220,7 +220,7 @@
             "fc": "dt"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 350,
             "cy": 400,
             "r": 40,
@@ -229,7 +229,7 @@
             "fc": "db"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 400,
             "cy": 400,
             "r": 40,
@@ -238,7 +238,7 @@
             "fc": "di"
         },
         {
-            "shape": "regular",
+            "element": "regular",
             "cx": 450,
             "cy": 400,
             "r": 40,
@@ -247,63 +247,63 @@
             "fc": "dv"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 65,
             "cy": 400,
             "r": 15,
             "fc": "lr"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 115,
             "cy": 400,
             "r": 15,
             "fc": "lo"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 165,
             "cy": 400,
             "r": 15,
             "fc": "ly"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 215,
             "cy": 400,
             "r": 15,
             "fc": "lg"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 265,
             "cy": 400,
             "r": 15,
             "fc": "lt"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 315,
             "cy": 400,
             "r": 15,
             "fc": "lb"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 365,
             "cy": 400,
             "r": 15,
             "fc": "li"
         },
         {
-            "shape": "circle",
+            "element": "circle",
             "cx": 415,
             "cy": 400,
             "r": 15,
             "fc": "lv"
         },
         {
-            "shape": "rectangle",
+            "element": "rectangle",
             "x": 280,
             "y": 20,
             "w": 130,
@@ -311,7 +311,7 @@
             "fc": "g0"
         },
         {
-            "shape": "rectangle",
+            "element": "rectangle",
             "x": 280,
             "y": 40,
             "w": 130,
@@ -320,7 +320,7 @@
             "fc": "g8"
         },
         {
-            "shape": "rectangle",
+            "element": "rectangle",
             "x": 280,
             "y": 60,
             "w": 130,
@@ -328,7 +328,7 @@
             "fc": "gf"
         },
         {
-            "shape": "text",
+            "element": "text",
             "x": 285,
             "y": 35,
             "fc": "gf",
@@ -336,13 +336,13 @@
             "ta": "l"
         },
         {
-            "shape": "text",
+            "element": "text",
             "x": 345,
             "y": 55,
             "text": "Hello, World!"
         },
         {
-            "shape": "text",
+            "element": "text",
             "x": 405,
             "y": 75,
             "fc": "g4",
@@ -350,7 +350,7 @@
             "ta": "r"
         },
         {
-            "shape": "polygon",
+            "element": "polygon",
             "p": [
                 {
                     "x": 320,
@@ -374,7 +374,7 @@
             "sc": "g0"
         },
         {
-            "shape": "polyline",
+            "element": "polyline",
             "p": [
                 {
                     "x": 380,
