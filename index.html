@@ -1,88 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSON 2 SVG</title>
     <style>
-        :root {
-            --text-colour: #b6b6fa;
-        }
+      :root {
+        --text-colour: #b6b6fa;
+      }
 
-        body {
-            background-color: var(--text-colour);
-        }
+      body {
+        background-color: var(--text-colour);
+      }
 
-        .error {
-            color: #FF0000;
-        }
+      .error {
+        color: #ff0000;
+      }
 
-        main {
-            display: grid;
-            grid-template-columns: 3fr 5fr;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
+      h1 {
+        margin: 0.5rem;
+      }
 
-        main>*>div {
-            width: 100%;
-        }
+      main {
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
 
-        #txaInput {
-            width: 100%;
-        }
+      main > * > div {
+        width: 100%;
+      }
 
-        div>div {
-            background-color: #FFFFFF;
-            color: #000000;
-            margin-bottom: 1rem;
-        }
+      #txaInput {
+        width: 100%;
+      }
 
-        #divReport {
-            white-space: pre;
-        }
+      div > div {
+        background-color: #ffffff;
+        color: #000000;
+        margin-bottom: 1rem;
+      }
+
+      #divReport {
+        white-space: pre;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>JSON 2 SVG rendering</h1>
-    <h2></h2>
     <main>
-        <textarea id="txaInput" rows="24" placeholder="Enter JSON here" spellcheck="false">
-        </textarea>
-        <div id="divSvgContainer">
-        </div>
+      <textarea
+        id="txaInput"
+        rows="24"
+        placeholder="Enter JSON here"
+        spellcheck="false"
+      >
+      </textarea>
+      <div id="divSvgContainer"></div>
     </main>
     <footer>
-        <a href="https://app.netlify.com/sites/json2svg/deploys"><img
-                src="https://api.netlify.com/api/v1/badges/b4f04530-6ff5-4e50-887a-6c6b0162255b/deploy-status"
-                style="vertical-align: middle;"></a>
-        <span style="margin: 0.5rem;">The source code of JSON-2-SVG can be found on <a
-                href="https://github.com/TracyGJG/json2svg#readme">GitHub</a>
-        </span>
+      <a href="https://app.netlify.com/sites/json2svg/deploys">
+        <img
+          src="https://api.netlify.com/api/v1/badges/b4f04530-6ff5-4e50-887a-6c6b0162255b/deploy-status"
+          style="vertical-align: middle"
+      /></a>
+      <span style="margin: 0.5rem"
+        >The source code of JSON-2-SVG can be found on
+        <a href="https://github.com/TracyGJG/json2svg#readme">GitHub</a>
+      </span>
     </footer>
 
     <script type="module">
-        import json2svg from './json2svg-lib.js';
-        import jsonData from './example2.json' assert {type: 'json'};
+      import json2svg from './json2svg-lib.js';
+      import jsonData from './example2.json' with { type: 'json' };
 
-        const input = document.querySelector('#txaInput');
-        input.value = JSON.stringify(jsonData, null, 2);
-        input.addEventListener('keyup', updateSvg);
+      const input = document.querySelector('#txaInput');
+      input.value = JSON.stringify(jsonData, null, 2);
+      input.addEventListener('keyup', updateSvg);
 
-        updateSvg();
+      updateSvg();
 
-
-        function updateSvg() {
-            const txaInput = document.querySelector('#txaInput');
-            const divSvgContainer = document.querySelector('#divSvgContainer');
-            const jsonObj = JSON.parse(txaInput.value.trim());
-            const result = json2svg(jsonObj);
-            divSvgContainer.innerHTML = result;
-        }
+      function updateSvg() {
+        const txaInput = document.querySelector('#txaInput');
+        const divSvgContainer = document.querySelector('#divSvgContainer');
+        const jsonObj = JSON.parse(txaInput.value.trim());
+        const result = json2svg(jsonObj);
+        divSvgContainer.innerHTML = result;
+      }
     </script>
-</body>
-
+  </body>
 </html>
